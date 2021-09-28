@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function okno_zamknij_Czaprowski() 
+            {
+                window.close()
+            }
+        </script>
+    </head>
+    <body>
+        przyklad1a.html <br>
+        <textarea rows="18" cols="132">
+           <html>
+	<head>
+		<title>Przykład 1</title>
+			<script language="JavaScript">
+				function WinOpen_Czaprowski() 
+			{
+				window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=940,width=826,top=50,left=200");
+			}
+				function okno_zamknij_Czaprowski() 
+            {
+                window.close()
+            }
+			</script>
+	</head>
+	<body>
+		<form>
+			<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_Czaprowski(' ')">
+			<input type="button" value="Zamknij okno" onclick="okno_zamknij_Czaprowski()"/>
+		</form>
+	</body>
+</html>
+        </textarea> <br>
+        obraz.html <br>
+        <textarea rows="43" cols="132">
+            <html>
+                <head>
+                    <script type="text/javascript">
+                        function okno_zamknij_Czaprowski() 
+                        {
+                            window.close()
+                        }
+                    </script>
+                </head>
+                <body>
+			1. JavaScript powstała w 1995 roku. <br>
+			2. JS jest językiem skryptowym, ponieważ nie musi zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania. <br>
+			3. Do interpretowania JS wystarczy nam do tego przeglądarka internetowa, która ten język obsługuje – czyli w zasadzie każda z liczących się na rynku aplikacji. <br>
+			4. Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu. <br>
+			5. Nie, nie jest to język obiektowy. <br>
+		<img src="obraz1.gif" />
+		
+			<br><br>
+				< Input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')" > <br>
+				<b>Kod tworzy przycisk oraz nadaje mu nazwę.</b>
+			<br><br>
+				window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); <br>
+				<b>Kod nadaje właściwości przyciskowi.</b>
+			<br><br>
+				toolbar=no, <b> wartość yes lub no (1 lub 0): pokazuje lub ukrywa standardowy pasek narzędzi </b> <br>
+				directories=no, <b> wartość yes lub no (1 lub 0): pokazuje lub ukrywa przyciski katalogów </b> <br>
+				menubar=no, <b> wartość yes lub no (1 lub 0): pokazuje lub ukrywa menu przeglądarki </b> <br>
+				height=280, <b> wartość w pixelach (1 lub 0): ustawia wysokość okna </b> <br>
+				width=160, <b> wartość w pixelach (1 lub 0): ustawia szerokość okna </b> <br>
+				top=200, <b> wartość w pixelach : ustawia położenie okna względem góry ekranu </b> <br>
+				left=200, <b> wartość w pixelach : ustawia położenie okna względem lewej strony ekranu </b> <br>
+			<br>
+				window.close(), <b> zamyka okno </b> <br>
+			<br><br>
+			
+                        
+
+                    <img src="obraz1.gif" height="450" width="810" />
+                    <input type="button" value="Zamknij okno" onclick="okno_zamknij_Czaprowski()"/>
+                </body>
+            </html>
+        </textarea>
+        <input type="button" value="Zamknij okno" onclick="okno_zamknij_Czaprowski()"/>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Przykład 1</title>
+			<script language="JavaScript">
+				function WinOpen_Czaprowski() 
+			{
+				window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=940,width=826,top=50,left=200");
+			}
+				function okno_zamknij_Czaprowski() 
+            {
+                window.close()
+            }
+			</script>
+	</head>
+	<body>
+		<form>
+			<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_Czaprowski(' ')">
+			<input type="button" value="Zamknij okno" onclick="okno_zamknij_Czaprowski()"/>
+		</form>
+	</body>
+</html>
