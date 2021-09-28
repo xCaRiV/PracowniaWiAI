@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function okno_zamknij_Czaprowski() 
+            {
+                window.close()
+            }
+        </script>
+    </head>
+    <body>
+        zadanie9.html <br>
+        <textarea rows="43" cols="132">
+<html>
+	<body>
+		<div style="color:purple;font-size:35px;">
+			<script language="JavaScript">
+				var dzien1=prompt("dzien1=","");
+				var godzina1=prompt("godzina1=","");
+				var dzien2=prompt("dzien2=","");
+				var godzina2=prompt("godzina2=","");
+				var suma;
+				var D1_cza=parseFloat(dzien1);
+				var G1_cza=parseFloat(godzina1);
+				var D2_cza=parseFloat(dzien2);
+				var G2_cza=parseFloat(godzina2);
+				suma=(D1_cza*24*60*60+G1_cza*60*60)-(D2_cza*24*60*60+G2_cza*60*60);
+				document.write("D1:"+D1_cza+"<br>G1:"+G1_cza+"<br> D2: "+D2_cza+"<br>G2:"+G2_cza+"<br> Ilość sekund: "+suma+" sekund<br>");
+			</script>
+		</div>
+	</body>
+</html>
+        </textarea>
+		<br>
+        <input type="button" value="Zamknij okno" onclick="okno_zamknij_Czaprowski()"/>
+    </body>
+</html>
