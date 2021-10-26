@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function okno_zamknij_Czaprowski() 
+            {
+                window.close()
+            }
+        </script>
+    </head>
+    <body>
+        zadanie9.html <br>
+        <textarea rows="43" cols="132">
+<!DOCTYPE html>
+<html>
+	<body>
+		<div style="color:orange;font-size:47px;">
+			<script language="JavaScript">
+				var mm=prompt("M=","");
+				var suma;
+				var suma2;
+				var m_cza=parseFloat(mm);
+				suma=(m_cza+1);
+				suma2=(m_cza*(m_cza+1));
+				document.write("1/"+m_cza+"=1/"+suma+"+1/"+suma2);
+			</script>
+		</div>
+	</body>
+</html>
+        </textarea>
+		<br>
+        <input type="button" value="Zamknij okno" onclick="okno_zamknij_Czaprowski()"/>
+    </body>
+</html>
