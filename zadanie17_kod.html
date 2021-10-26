@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function okno_zamknij_Czaprowski() 
+            {
+                window.close()
+            }
+        </script>
+    </head>
+    <body>
+        zadanie17.html <br>
+        <textarea rows="43" cols="132">
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title> Użycie fukcji </title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <div style="color:navy;font-size:50px;">
+            <script language="JavaScript">
+                var a = parseFloat(prompt("a = ", ""));
+                var b = parseFloat(prompt("b = ", ""));
+                function suma_cza(a, b) {
+                    return a + b;
+                }
+                function odejmowanie_cza(a,b) {
+                    return a - b;
+                }
+                function mnozenie_cza(a,b) {
+                    return a * b;
+                }
+                function od_kwadratu_cza(a) {
+                    return a*a;
+                }
+                function od_kwadratu_cza_v2(b) {
+                    return b*b;
+                }
+                function reszta_z_dzielenia_a_przez_b_cza(a,b){
+                    return a%=b;
+                }
+                document.write("Suma = " + suma_cza(a, b) + "<br>");
+                document.write("Odejmowanie = " + odejmowanie_cza(a, b) + "<br>");
+                document.write("Mnozenie = " + mnozenie_cza(a, b) + "<br>");
+                document.write("a do potegi 2 = " + od_kwadratu_cza(a) + "<br>");
+                document.write("b do potegi 2 = " + od_kwadratu_cza_v2(b) + "<br>");
+                document.write("Reszta z dzielenia a/b = " + reszta_z_dzielenia_a_przez_b_cza(a, b) + "<br>");
+            </script>
+        </div>
+    </body>
+</html>
+        </textarea>
+		<br>
+        <input type="button" value="Zamknij okno" onclick="okno_zamknij_Czaprowski()"/>
+    </body>
+</html>
