@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function okno_zamknij_Czaprowski() 
+            {
+                window.close()
+            }
+        </script>
+    </head>
+    <body>
+        zadanie13.html <br>
+        <textarea rows="43" cols="132">
+<!DOCTYPE html>
+	<html>
+		<body>
+			<div style="color:orange;font-size:35px;">
+				<script language="JavaScript">
+					var LiczbaA=prompt("A=","");
+					var LiczbaB=prompt("B=","");
+					var wynik;
+					var A=parseFloat(LiczbaA);
+					var B=parseFloat(LiczbaB);
+						wynika=(A*A*A);
+						wynikb=(3*(A*A)*B);
+						wynikc=(3*A*(B*B));
+						wynikd=(B*B*B);
+						wynikz=wynika+wynikb+wynikc+wynikd;
+					document.write("("+A+"+"+B+")^3=");
+					document.write(A+"^3+3*(("+A+")^2)*("+B+")+3*("+A+")*(("+B+")^2)+"+B+"^3=");
+					document.write(wynika+"+"+wynikb+"+"+wynikc+"+"+wynikd);
+					document.write("="+wynikz);
+				</script>
+			</div>
+		</body>
+	</html>
+        </textarea>
+		<br>
+        <input type="button" value="Zamknij okno" onclick="okno_zamknij_Czaprowski()"/>
+    </body>
+</html>
