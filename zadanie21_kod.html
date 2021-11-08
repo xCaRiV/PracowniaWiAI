@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function okno_zamknij_Czaprowski() 
+            {
+                window.close()
+            }
+        </script>
+    </head>
+    <body>
+        zadanie17.html <br>
+        <textarea rows="43" cols="132">
+<<!DOCTYPE html>
+<html>
+    <head>
+        <script language="JavaScript">
+			function dlugosc_drabiny_cza(d,x) {
+				d_cza = parseFloat(d);
+				x_cza = parseFloat(x);
+				m_cza = Math.sqrt(Math.pow(d,2) + Math.pow(x,2));
+					document.getElementsByName('dlugosc')[0].value=m_cza.toFixed(2);
+						alert("m = "+m_cza.toFixed(2)+" cm");
+							pokaz1.innerHTML="m = "+m_cza.toFixed(2)+" cm"+"<br>";
+			}
+			function kat_nachylenia_cza(d,x) {
+				d_cza = parseFloat(d);
+				x_cza = parseFloat(x);
+					alpha_cza = Math.atan(d/x) * (180/Math.PI);
+					document.getElementsByName('kat_nachylenia')[0].value=alpha_cza.toFixed(2);
+						alert("Kąt nachylenia drabiny = "+alpha_cza.toFixed(2));
+							pokaz2.innerHTML="Kąt nachylenia drabiny = "+alpha_cza.toFixed(2)+"<br>";
+			}
+		</script>
+	</head>
+	<body>
+		<form name="formularz" action="..." onsubmit="dlugosc_drabiny_cza(this.bok_d.value,this.bok_x.value); kat_nachylenia_cza(this.bok_d.value,this.bok_x.value);return false">
+				Podaj D=
+            <input size="6" name="bok_d">
+                Podaj x=
+            <input size="6" name="bok_x">
+                <br>
+                <br>
+            <input TYPE="submit" Value="oblicz" >
+                <br>
+                <br>
+                Długość drabiny =
+            <input size="6" name="dlugosc">
+                Kąt nachylenia drabiny =
+            <input size="6" name="kat_nachylenia">
+        </form>
+		<table>
+            <tr id="pokaz1"></tr>
+            <tr id="pokaz2"></tr>
+        </table>
+	</body>
+</html>
+        </textarea>
+		<br>
+        <input type="button" value="Zamknij okno" onclick="okno_zamknij_Czaprowski()"/>
+    </body>
+</html>
