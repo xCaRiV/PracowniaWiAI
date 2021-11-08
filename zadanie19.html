@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+        Obliczanie prostokata
+        </title>
+        <script language="JavaScript">
+ 
+            function pole_czaprowski(a,b)    {
+                a_cza=parseFloat(a)
+                b_cza=parseFloat(b)
+                pole=a*b
+                document.getElementsByName('obj')[0].value=pole.toFixed(2);
+                alert("pol e= "+pole.toFixed(2)+" cm^2");
+                wprowadz_pole_wys.innerHTML="pol e= "+pole.toFixed(2)+" cm^2"+"<br>";
+            }
+            function obwod_czaprowski(a,b)   {
+                a_cza=parseFloat(a)
+                b_cza=parseFloat(b)
+                obw=(a*a)+(b*b)
+                document.getElementsByName('pole')[0].value=obw.toFixed(2);
+                alert("obw="+obw.toFixed(2)+" cm^2");
+                wprowadz_obw_wys.innerHTML="obw="+obw.toFixed(2)+"cm^2";
+            }
+        </script>
+    </head>
+    <body>
+        Obliczanie obwodu oraz pola prostokata
+        <br> <br>
+        <form name="formularz" action="..." onsubmit="pole(this.a.value,this.b.value);
+            obw(this.a.value,this.b.value);return false">
+            Podaj a=
+            <input size="6" name="bok a">
+                Podaj b=
+            <input size="6" name="bok b">
+                <br>
+                <br>
+            <input TYPE="button" Value="Oblicz" >
+                <br>
+                <br>
+                Pole=
+            <input size="6" name="Pole">
+                obw=
+            <input size="6" name="obw">
+        </form>
+        <table>
+            <tr id="test1"></tr>
+            <tr id="test2"></tr>
+        </table>
+    </body>
+</html>
