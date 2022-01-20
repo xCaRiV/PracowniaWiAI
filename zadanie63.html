@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script language="JavaScript">
+			function test(){
+				var x=prompt("Podaj liczbę x=","");
+				const b=prompt("Wyraz:","");
+				var a=parseFloat(x);
+					if(a==1||b=="Zielony"){
+					document.write("<font size=7; color=green>Zielony</font>");
+				}
+					else if(a==2||b=="Żółty"){
+					document.write("<font size=1; color=yellow>Żółty</font>");
+				}
+				}
+		</script>
+	</head>
+<body>
+	<font color="orange"><h2>Menu</h2></font>
+		<h3> <font color="green">1 Zielony </font></h3>
+		<h3> <font color="yellow">2 Żółty </font></h3>
+			<input id="przycisk" type="button" value="clickme" onclick="test();" />
+</body>
+</html>
